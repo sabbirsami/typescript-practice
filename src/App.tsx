@@ -8,6 +8,17 @@ let isSmart: boolean = true;
 let students: string[] = ["joe", "biden", "harris"];
 let fees: number[] = [12, 45, 86, 32];
 
+interface Person {
+    name: string;
+    job: string;
+    age: number;
+}
+const person: Person = {
+    name: "Sami",
+    job: "Jobless",
+    age: 18,
+};
+
 function App() {
     return <div className="App"></div>;
 }
