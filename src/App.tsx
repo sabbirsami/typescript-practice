@@ -11,12 +11,21 @@ let fees: number[] = [12, 45, 86, 32];
 interface Person {
     name: string;
     job: string;
-    age: number;
+    age?: number;
+    location?: string | number;
 }
 const person: Person = {
     name: "Sami",
     job: "Jobless",
-    age: 18,
+    location: 54,
+};
+
+const handleAddUser = (
+    firstName: string,
+    age: number,
+    address: string
+): void => {
+    console.log(firstName, age, address);
 };
 
 function App() {
